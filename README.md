@@ -14,7 +14,8 @@
 # Environment
 - Find app/environments/development.rb
 - Use details below for email configuration. Example below used in Mailtrap
-    """
+    ````
+    ```
         config.action_mailer.delivery_method = :smtp
         config.action_mailer.smtp_settings = {
             :user_name => 'd4d4292a2d811e',
@@ -24,7 +25,8 @@
             :port => '2525',
             :authentication => :cram_md5
         }
-    """
+    ```
+    ````
 
 # Install Rails
 - Please see link https://gorails.com/setup/windows/10#overview
