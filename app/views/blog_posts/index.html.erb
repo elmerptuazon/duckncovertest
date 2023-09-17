@@ -1,0 +1,15 @@
+<h1>
+    Blog Site
+</h1>
+<h2>
+    Create new <a href=<%= new_blog_post_path() %>>here</a>
+</h2>
+
+<% @blog_posts.each do |blog_post| %>
+<div>
+    <h2>Title: <%= link_to blog_post.title, blog_post_path(blog_post.id) %></h2>
+    <p>Body: <%= blog_post.body %></p>
+    <p>Author: <%= blog_post.author_name %></p>
+    <p>Email: <%= blog_post.author_email %></p>
+</div>
+<%end%>

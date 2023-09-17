@@ -1,0 +1,11 @@
+<h2>
+    <a href="/">Back</a>
+</h2>
+<h1>Title: <%= @blog_posts.title %></h1>
+<p>Body: <%= @blog_posts.body %></p>
+<p>Author: <%= @blog_posts.author_name %></p>
+<p>Email: <%= @blog_posts.author_email %></p>
+
+<h2>Feedback</h2>
+<%= render @blog_posts.feedback %>
+<%= render partial: 'feedbacks/form' , locals: { post: @blog_posts }%>

@@ -1,0 +1,26 @@
+<h1>New Blog Post</h1>
+
+<%= form_with model: @blog_post do |form| %>
+    <% form.object.errors.full_messages.each do |message|%>
+        <div><%= message %>
+        <% end %>
+    
+    <div>
+        <%= form.label :title %>
+        <%= form.text_field :title %>
+    </div>
+    <div>
+        <%= form.label :body %>
+        <%= form.text_area :body %>
+    </div>
+    <div>
+        <%= form.label :author_name %>
+        <%= form.text_field :author_name %>
+    </div>
+    <div>
+        <%= form.label :author_email %>
+        <%= form.email_field :author_email %>
+    </div>
+    
+    <%= form.button %>
+<% end %>
